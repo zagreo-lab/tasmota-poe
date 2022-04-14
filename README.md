@@ -43,7 +43,7 @@ After tasmota-minimal.bin is successfully loaded, select Firmware Upgrade once a
 
 > 3. Give 2 commands: 
 
-```backlog rule1 on system#boot do TCPStart 8888 endon ; rule1 1 ; template {"NAME":"Tube CC2652-PoE Bridge","GPIO":[1,1,1,1,1,5504,0,0,5536,1,1,1,5472,0,5600,0,0,0,0,5568,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1],"FLAG":0,"BASE":1} ; module 0
+```backlog rule1 on system#boot do TCPStart 8888 endon; rule1 1; template {"NAME":"Tube CC2652-PoE Bridge","GPIO":[1,1,1,1,1,5504,0,0,5536,1,1,1,5472,0,5600,0,0,0,0,5568,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1],"FLAG":0,"BASE":1}; module 0
 ``` 
 
 ```backlog rule2 on system#boot do Wifi 0 endon; rule2 1``` 
