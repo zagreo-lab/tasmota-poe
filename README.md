@@ -3,6 +3,10 @@ Custom firmware for Tube-CC2652-PoE
 
 How to install TASMOTA firmware on Tube-ZB-CC2652-PoE
 
+Even though Tasmota offers several pre-compiled firmware variants, sometimes the ready-to-flash binaries aren't enough. If you need to enable or disable some features, or simply change some parameters, then you need to compile a firmware binary yourself.
+
+Gitpod is a web browser based online IDE. All you need to use it is to link your GitHub account. Gitpod will take care of all the necessary software package dependencies for you.
+
 1) You need to compile a bin on gitpod.io, in the workspace /workspace/Tasmota master, modifying 2 files:
 
 * 'Platformio_override.ini' file which is located in the root directory – /workspace/Tasmota. Open the file, scroll to the bottom, and add:
