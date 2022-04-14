@@ -31,5 +31,14 @@ Once it does, the bin file can be found in /workspace/Tasmota/build_output/firmw
 Download tasmota32-CC2652P2-POE-BRIDGE.bin to your computer by right-clicking on the file and selecting 'Download'. You are now ready to flash your device.
 
 2) Flash tasmota32-CC2652P2-POE-BRIDGE.bin
-3) Give the command: backlog wifi 0 ; Template 0, rule1 1 
-4) Restart
+```
+OTA Flash~
+If you already have Tasmota flashed on your device, you can use the File Upload OTA method to load the new firmware binary file.
+
+Download tasmota-minimal.bin
+Make a backup of the device configuration using the web UI Configuration menu option.
+Upload tasmota-minimal.bin to your device using the web UI Firmware Upgrade selection. Choose Upgrade by file upload.
+After tasmota-minimal.bin is successfully loaded, select Firmware Upgrade once again and upload the firmware file compiled using Gitpod.
+```
+4) Give the command: backlog wifi 0 ; Template 0, rule1 1 
+5) Restart
