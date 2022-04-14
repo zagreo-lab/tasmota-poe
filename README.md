@@ -42,4 +42,5 @@ Upload tasmota-minimal.bin to your device using the web UI Firmware Upgrade sele
 After tasmota-minimal.bin is successfully loaded, select Firmware Upgrade once again and upload the firmware file compiled using Gitpod.
 
 > 3. Give the command: backlog wifi 0 ; Template 0, rule1 1 
+
 > 4. Restart
