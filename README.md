@@ -3,7 +3,7 @@ Custom firmware for Tube-CC2652-PoE
 
 Come installare TASMOTA su Tube ZB CC2652-PoE
 
-1) Bisogna compilare un bin su gitpod.io, modificando 2 files:
+1) Bisogna compilare un bin su gitpod.io, nel work space /workspace/Tasmota master, modificando 2 files:
 
 a)
 
