@@ -41,9 +41,10 @@ Make a backup of the device configuration using the web UI Configuration menu op
 Upload tasmota-minimal.bin to your device using the web UI Firmware Upgrade selection. Choose Upgrade by file upload.
 After tasmota-minimal.bin is successfully loaded, select Firmware Upgrade once again and upload the firmware file compiled using Gitpod.
 
-> 3. Give the commands: 
+> 3. Give 2 commands: 
 
-```backlog Template {"NAME":"Tube ZB CC2652-PoE","GPIO":[1,1,1,1,1,3584,0,0,5536,1,1,1,3552,0,5600,0,0,0,0,5568,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1],"FLAG":0,"BASE":1}; module 0``` 
+```backlog rule1 on system#boot do TCPStart 8888 endon ; rule1 1 ; template {"NAME":"Tube CC2652-PoE Bridge","GPIO":[1,1,1,1,1,5504,0,0,5536,1,1,1,5472,0,5600,0,0,0,0,5568,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1],"FLAG":0,"BASE":1} ; module 0
+``` 
 
 ```backlog rule2 on system#boot do Wifi 0 endon; rule2 1``` 
 
