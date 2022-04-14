@@ -1,5 +1,5 @@
 # tasmota-poe
-Custom firmware for Tube-CC2652-PoE
+> Custom firmware for Tube-CC2652-PoE
 
 How to install TASMOTA firmware on Tube-ZB-CC2652-PoE
 
