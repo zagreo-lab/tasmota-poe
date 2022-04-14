@@ -7,6 +7,8 @@ Even though Tasmota offers several pre-compiled firmware variants, sometimes the
 
 Gitpod is a web browser based online IDE. All you need to use it is to link your GitHub account. Gitpod will take care of all the necessary software package dependencies for you.
 
+The proper method of customizing firmware compilation options is to use the user_config_override.h file. You should not change the my_user_config.h file.
+
 1) You need to compile a bin on gitpod.io, in the workspace /workspace/Tasmota master, modifying 2 files:
 
 * 'Platformio_override.ini' file which is located in the root directory – /workspace/Tasmota. Open the file, scroll to the bottom, and add:
@@ -26,6 +28,8 @@ platformio run -e tasmota32-CC2652P2-POE
 
 Once it does, the bin file can be found in /workspace/Tasmota/build_output/firmware
 
-2) Flashare il compilato: tasmota32-CC2652P2-POE-BRIDGE.bin
-3) Dare il seguente comando: backlog wifi 0 ; Template 0, rule1 1 
+Download tasmota32-CC2652P2-POE-BRIDGE.bin to your computer by right-clicking on the file and selecting 'Download'. You are now ready to flash your device.
+
+2) Flash tasmota32-CC2652P2-POE-BRIDGE.bin
+3) Give the command: backlog wifi 0 ; Template 0, rule1 1 
 4) Restart
