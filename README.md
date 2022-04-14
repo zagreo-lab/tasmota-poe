@@ -1,7 +1,7 @@
 # tasmota-poe
 Custom firmware for Tube-CC2652-PoE
 
-How to install TASMOTA firmaware on Tube-ZB-CC2652-PoE
+How to install TASMOTA firmware on Tube-ZB-CC2652-PoE
 
 1) You need to compile a bin on gitpod.io, in the workspace /workspace/Tasmota master, modifying 2 files:
 
