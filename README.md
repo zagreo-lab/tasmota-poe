@@ -70,9 +70,16 @@ Use the cc2538-bsl programmer available here: https://github.com/JelmerT/cc2538-
 **Ethernet version :**
 1. Prep the Module for firmware update:
 
-Click the button to intiate the bootloader mode for the module:
+- Put your device in BSL mode
+Please follow the following instructions to put your stick in BSL mode:
+Unplug your devicethe ethenet
+Press the BSL pushbutton and keep holding while plugging the device back into to ethernet
 
+Image of push button:
 <img src="https://github.com/tube0013/tube_gateways/raw/main/images/cc2652_web1.png" width="300">
+
+Give it a few seconds for the device to settle and set up and release the BSL button
+Your device should now be in ROM bootloader mode
 
 Watch the Debug output and when pompted go to step 2.
 
