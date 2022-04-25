@@ -80,11 +80,6 @@ Please follow the following instructions to put your stick in BSL mode:
 Give it a few seconds for the device to settle and set up and release the BSL button
 Your device should now be in ROM bootloader mode
 
-Watch the Debug output and when pompted go to step 2.
-
-<img src="https://github.com/tube0013/tube_gateways/raw/main/images/cc2652_fw_debuglog.png" width="500">
-
-
 2. Run the cc2538-bsl programmer:
 ```
 cc2538-bsl.py -p socket://tube_zb_gw_cc2652p2.local:6638  -evw ../CC1352P2_CC2652P_launchpad_20210120.hex
