@@ -82,8 +82,8 @@ Your device should now be in ROM bootloader mode
 
 2. Run the cc2538-bsl programmer:
 ```
-cc2538-bsl.py -p socket://tube_zb_gw_cc2652p2.local:6638  -evw ../CC1352P2_CC2652P_launchpad_20210120.hex
-Opening port socket://tube_zb_gw_cc2652p2.local:6638, baud 500000
+cc2538-bsl.py -p socket://<tube_zb_gw_cc2652p2 IP address>:8888  -evw ../CC1352P2_CC2652P_launchpad_20210120.hex
+Opening port socket://<tube_zb_gw_cc2652p2 IP address>:8888, baud 500000
 Reading data from ../CC1352P2_CC2652P_launchpad_20210120.hex
 Your firmware looks like an Intel Hex file
 Connecting to target...
