@@ -72,10 +72,10 @@ Use the cc2538-bsl programmer available here: https://github.com/JelmerT/cc2538-
 
 - Put your device in BSL mode
 Please follow the following instructions to put your stick in BSL mode:
-Unplug your devicethe ethenet
-Press the BSL pushbutton and keep holding while plugging the device back into to ethernet
+* Unplug your devicethe ethenet
+* Press the BSL pushbutton and keep holding while plugging the device back into to ethernet
+
 <img src="https://github.com/zagreo-lab/tasmota-poe/raw/main/zigbee.png" width="300">
-Image of push button
 
 Give it a few seconds for the device to settle and set up and release the BSL button
 Your device should now be in ROM bootloader mode
