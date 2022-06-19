@@ -23,7 +23,7 @@ build_flags             = ${env:tasmota32_base.build_flags} -DFIRMWARE_CC2652P2_
 
 * In the terminal at the bottom of the screen, while in the /workspace/Tasmota directory, type the following:
 ```
-platformio run -e tasmota32-CC2652P2-POE
+platformio run -e tasmota32-CC2652P2-POE-BRIDGE
 ```
 
 Once it does, the bin file can be found in /workspace/Tasmota/build_output/firmware
