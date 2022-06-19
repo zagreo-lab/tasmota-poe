@@ -1,11 +1,12 @@
 /*
   user_config_override.h - user configuration overrides my_user_config.h for Tasmota
-  Zagreo 26.12.2021
+  Zagreo 26.12.2021, 19.06.2022
 */
 
 #ifndef _USER_CONFIG_OVERRIDE_H_
 #define _USER_CONFIG_OVERRIDE_H_
 
+// Solo per Test
 #ifdef FIRMWARE_CC2652P2_POE
   #warning **** Build: FIRMWARE FOR CC2652P2-POE ****
   #undef CODE_IMAGE_STR
@@ -44,11 +45,12 @@
   #define ETH_ADDRESS 0 // PHY1
 #endif
 
-// platformio run -e tasmota32-CC2652P2-POE-BRIDGE 26.12.2021
+// 26.12.2021, 19.06.2022
+// platformio run -e tasmota32-CC2652P2-POE-BRIDGE 
 #ifdef FIRMWARE_CC2652P2_POE_BRIDGE
   #warning **** Build: FIRMWARE FOR CC2652P2-POE-BRIDGE ****
   #undef CODE_IMAGE_STR
-  #define CODE_IMAGE_STR "CC2652P2_POE_BRIDGE_1.1"
+  #define CODE_IMAGE_STR "CC2652P2_POE_BRIDGE_11.0.1"
 
 #undef  SERIAL_LOG_LEVEL
   #define SERIAL_LOG_LEVEL LOG_LEVEL_NONE
@@ -65,8 +67,8 @@
   #define USE_TCP_BRIDGE
 
   #define USE_ZIGBEE
-  #define USE_ZIGBEE_ZNP
   #undef  USE_ZIGBEE_EZSP  // Ensure ZNP support and not EZSP
+  #define USE_ZIGBEE_ZNP
   #define USE_ZIGBEE_CHANNEL  11                 // Zigbee Channel (11-26)
 
   #define USE_UFILESYS
