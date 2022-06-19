@@ -15,7 +15,7 @@ The proper method of customizing firmware compilation options is to use the user
 ```
 [env:tasmota32-CC2652P2-POE]
 extends                 = env:tasmota32
-build_flags             = ${env:tasmota32_base.build_flags} -DFIRMWARE_CC2652P2_POE
+build_flags             = ${env:tasmota32_base.build_flags} -DFIRMWARE_CC2652P2_POE_BRIDGE
 ```
 
 
