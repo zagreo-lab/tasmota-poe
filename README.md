@@ -13,7 +13,8 @@ The proper method of customizing firmware compilation options is to use the user
 
 * 'Platformio_override.ini' file which is located in the root directory – /workspace/Tasmota. Open the file, scroll to the bottom, and add:
 ```
-[env:tasmota32-CC2652P2-POE]
+; *** Zagreo 19.6.2022, 03.07.2022
+[env:tasmota32-CC2652P2-POE-BRIDGE]
 extends                 = env:tasmota32
 build_flags             = ${env:tasmota32_base.build_flags} -DFIRMWARE_CC2652P2_POE_BRIDGE
 ```
