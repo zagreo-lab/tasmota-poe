@@ -1,12 +1,12 @@
 /*
   user_config_override.h - user configuration overrides my_user_config.h for Tasmota
-  Zagreo 26.12.2021, 19.06.2022, 03.07.2022
+  Zagreo 26.12.2021, 19.06.2022, 03.07.2022, 19.10.2022
 */
 
 #ifndef _USER_CONFIG_OVERRIDE_H_
 #define _USER_CONFIG_OVERRIDE_H_
 
-// 26.12.2021, 19.06.2022, 03.07.2022
+// 26.12.2021, 19.06.2022, 03.07.2022, 19.10.2022
 // per compilare dare il comando: platformio run -e tasmota32-CC2652P2-POE-BRIDGE
 //
 #ifdef FIRMWARE_CC2652P2_POE_BRIDGE
