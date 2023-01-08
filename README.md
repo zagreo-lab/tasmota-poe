@@ -126,7 +126,7 @@ Reading data from ../CC1352P2_CC2652P_launchpad_20210120.hex
 Your firmware looks like an Intel Hex file
 Connecting to target...
 CC1350 PG2.0 (7x7mm): 352KB Flash, 20KB SRAM, CCFG.BL_CONFIG at 0x00057FD8
-Primary IEEE Address: 00:12:4B:00:21:B4:97:D8
+Primary IEEE Address: 00:12:4B:00:23:7D:FC:46
     Performing mass erase
 Erasing all main bank flash sectors
     Erase done
