@@ -69,17 +69,25 @@ https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0
 Use the cc2538-bsl programmer available here: https://github.com/JelmerT/cc2538-bsl
 
 Utilizzare il server OpenHab 3 in cui il programma è già installato:
-Connettersi al server ed entrare nella cartella /home/openhabian/cc2538-bsl
 
+> 1. Fermare il server zigbee2mqtt che crea conflitto con la porta di collegamento
 ```
+sudo systemctl restart openhab2.service
+```
+> 2. Entrare nella cartella /home/openhabian/cc2538-bsl
+```
+# Comandi da dare singolarmente:
 virtualenv -p 3 venv # Comando per lanciare l'ambiente protetto pythyon
 source venv/bin/activate # Comando per attivare l'ambiente protetto pythyon
+# Per fare il backup:
 # python -m zigpy_znp.tools.network_backup socket://192.168.5.52:8888 -i zigbee_network_backup.json
+#
+# Potrebbe essere necessario aggiornare le librerie
+# pip3 install pyserial
 
-# python cc2538-bsl.py -p socket://192.168.5.52:8888  -evw ./CC1352P2_CC2652P_launchpad_coordinator_20220219.hex
-pip3 install pyserial
 python3 cc2538-bsl.py -p socket://192.168.5.52:8888  -evw ./CC1352P2_CC2652P_launchpad_coordinator_20221226.hex
 ```
+> 3. Riavviare il server zigbee2mqtt
 
 
 
