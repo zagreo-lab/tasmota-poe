@@ -86,6 +86,7 @@ source venv/bin/activate # Comando per attivare l'ambiente protetto pythyon
 # pip3 install pyserial
 
 # Dopo aver messo il device in BSL mode come sotto spiegato, dare il seguente comando:
+# python3 cc2538-bsl.py -p socket://192.168.5.52:8888  -evw ./CC1352P2_CC2652P_launchpad_coordinator_20220219.hex
 python3 cc2538-bsl.py -p socket://192.168.5.52:8888  -evw ./CC1352P2_CC2652P_launchpad_coordinator_20221226.hex
 ```
 
