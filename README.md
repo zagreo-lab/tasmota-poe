@@ -71,6 +71,16 @@ Use the cc2538-bsl programmer available here: https://github.com/JelmerT/cc2538-
 Utilizzare il server OpenHab 3 in cui il programma è già installato:
 Connettersi al server ed entrare nella cartella /home/openhabian/cc2538-bsl
 
+```
+virtualenv -p 3 venv # Comando per lanciare l'ambiente protetto pythyon
+source venv/bin/activate # Comando per attivare l'ambiente protetto pythyon
+# python -m zigpy_znp.tools.network_backup socket://192.168.5.52:8888 -i zigbee_network_backup.json
+
+# python cc2538-bsl.py -p socket://192.168.5.52:8888  -evw ./CC1352P2_CC2652P_launchpad_coordinator_20220219.hex
+pip3 install pyserial
+python3 cc2538-bsl.py -p socket://192.168.5.52:8888  -evw ./CC1352P2_CC2652P_launchpad_coordinator_20221226.hex
+```
+
 
 
 **Ethernet version :**
