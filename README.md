@@ -88,7 +88,17 @@ source venv/bin/activate # Comando per attivare l'ambiente protetto pythyon
 # Dopo aver messo il device in BSL mode come sotto spiegato, dare il seguente comando:
 python3 cc2538-bsl.py -p socket://192.168.5.52:8888  -evw ./CC1352P2_CC2652P_launchpad_coordinator_20221226.hex
 ```
-> 3. Riavviare il server zigbee2mqtt
+
+> . Deattivare l'amiente protetto pythyon:
+```
+deactivate
+```
+> . rimuovere completamente un virtual environment digita:
+```
+rm -r venv/
+```
+
+> 5. Riavviare il server zigbee2mqtt
 ```
 sudo systemctl start zigbee2mqtt
 ```
