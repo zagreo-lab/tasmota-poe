@@ -89,11 +89,11 @@ source venv/bin/activate # Comando per attivare l'ambiente protetto pythyon
 python3 cc2538-bsl.py -p socket://192.168.5.52:8888  -evw ./CC1352P2_CC2652P_launchpad_coordinator_20221226.hex
 ```
 
-> . Deattivare l'amiente protetto pythyon:
+> 3. Deattivare l'amiente protetto pythyon:
 ```
 deactivate
 ```
-> . rimuovere completamente un virtual environment digita:
+> 4. Per rimuovere completamente un virtual environment digita:
 ```
 rm -r venv/
 ```
