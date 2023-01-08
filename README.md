@@ -68,6 +68,11 @@ https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0
 
 Use the cc2538-bsl programmer available here: https://github.com/JelmerT/cc2538-bsl
 
+Utilizzare il server OpenHab 3 in cui il programma è già installato:
+Connettersi al server ed entrare nella cartella /home/openhabian/cc2538-bsl
+
+
+
 **Ethernet version :**
 1. Prep the Module for firmware update:
 
