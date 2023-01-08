@@ -72,7 +72,7 @@ Utilizzare il server OpenHab 3 in cui il programma è già installato:
 
 > 1. Fermare il server zigbee2mqtt che crea conflitto con la porta di collegamento
 ```
-sudo systemctl restart openhab2.service
+sudo systemctl stop zigbee2mqtt
 ```
 > 2. Entrare nella cartella /home/openhabian/cc2538-bsl
 ```
@@ -85,10 +85,13 @@ source venv/bin/activate # Comando per attivare l'ambiente protetto pythyon
 # Potrebbe essere necessario aggiornare le librerie
 # pip3 install pyserial
 
+# Dopo aver messo il device in BSL mode come sotto spiegato, dare il seguente comando:
 python3 cc2538-bsl.py -p socket://192.168.5.52:8888  -evw ./CC1352P2_CC2652P_launchpad_coordinator_20221226.hex
 ```
 > 3. Riavviare il server zigbee2mqtt
-
+```
+sudo systemctl start zigbee2mqtt
+```
 
 
 **Ethernet version :**
