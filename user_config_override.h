@@ -1,6 +1,6 @@
 /*
   user_config_override.h - user configuration overrides my_user_config.h for Tasmota
-  Zagreo 26.12.2021, 19.06.2022, 03.07.2022, 19.10.2022
+  Zagreo 26.12.2021, 19.06.2022, 03.07.2022, 19.10.2022, 06.02.2023
 */
 
 #ifndef _USER_CONFIG_OVERRIDE_H_
@@ -57,8 +57,7 @@
   // -- Default Rule 1 to start Server at boot ---------------
   #define USE_RULES
   #undef  USER_RULE1
-  #define USER_RULE1 "ON system#boot DO TCPStart 8888 ENDON"
-
+  #define USER_RULE1 "ON system#boot DO TCPStart 6638 ENDON"
 
 #endif
 
